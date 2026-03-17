@@ -1,0 +1,125 @@
+[General]
+ip-mode = v4-only
+ipv6-vif = off
+sni-sniffing = false
+disable-stun = true
+udp-fallback-mode = REJECT
+wifi-access-http-port = 7222
+wifi-access-socks5-port = 7221
+allow-wifi-access = false
+interface-mode = auto
+test-timeout = 60
+disconnect-on-policy-change = false
+dns-server = 223.5.5.5,119.29.29.29
+doq-server = quic://223.5.5.5:853,quic://223.6.6.6:853
+proxy-test-url = http://1.1.1.1/generate_204
+internet-test-url = http://wifi.vivo.com.cn/generate_204
+resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
+geoip-url = https://geodata.kelee.one/Country-Masaiki.mmdb
+ipasn-url = https://geodata.kelee.one/GeoLite2-ASN-P3TERX.mmdb
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+
+[Remote Proxy]
+Nexitally = https://cdn.zenithgrid.co/?L2Rvd25sb2FkQ29uZmlnL0xvb24uYXNweD9xeD1jMjAyMiZlcT1pb3MmdXJrPTNlZDUwNzE0LWQwOGMtNGZlNC05MzA3LWNkZTZkYmY2MmIyOCZtbT0yMjYyNjQma3RtbT1ySlhjbG5lVzI5WElSbm4wZHo0Y3BnJTNkJTNkJmViNmM2ZGVmMDU1NzRjMDhhOTcwNQ==,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=false,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nexitally(1).png
+Tag = https://rama991.siamparagon.org/api/v1/trails/bolster?token=59946381b11e385e8e1bd8039a1e7ca5,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=false,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TAG.png
+SNTP = https://sub1.sntp.me/baseStr?token=cab47310940b758e081c7995c8bc9495&sign=134f7ec2c814bfd33aa2cb28f354077a&ts=1773499566&nonce=2356dcf46d7c7909955949a0d1a6878d&v=v2&timestamp=120764,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=true,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(2).png
+CTC = https://47.115.49.124:9999/api/v1/client/subscribe?token=f5b0ffcdd55c83ccd87159568b3e6c14,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=false,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SCTC.png
+
+[Remote Filter]
+
+[Proxy Group]
+Nexitally Proxy = select,Nexitally,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nexitally(1).png
+Tag Proxy = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TAG.png
+SNTP Proxy = select,SNTP,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(2).png
+CTC Proxy = select,CTC,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SCTC.png
+AI = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatGPT-green.png
+🇳🇱Telegram = select,Tag,SNTP,img-url = https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Netherlands.png
+🇺🇸Telegram = select,Tag,img-url = https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/FlagGif/united-states.gif
+🇸🇬Telegram = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+Meta = select,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/meta.png
+Twitter = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+Wikimedia = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/wikipedia.png
+🇹🇼Stream = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(4).png
+Apple Music = select,DIRECT,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applemusic.png
+Apple = select,DIRECT,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+WeChat = select,DIRECT,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/wechat.png
+TikTok = select,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/tiktok.png
+Binance = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bian.png
+Game = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/game(3).png
+EMBY = select,SNTP,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/emby.png
+Final = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+
+[Proxy Chain]
+
+[Rule]
+DOMAIN-SUFFIX,rama991.siamparagon.org,DIRECT
+DOMAIN-SUFFIX,ping0.cc,Meta
+DOMAIN-SUFFIX,tagss.pro,SNTP Proxy
+DOMAIN,imagine.meta.com,Meta
+DOMAIN-SUFFIX,meta.ai,Meta
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,Final
+DOMAIN-SUFFIX,apple-relay.apple.com,Final
+DOMAIN-SUFFIX,apple-relay.cloudflare.com,Final
+DOMAIN-SUFFIX,post.cn2gias.uk,EMBY
+DOMAIN-SUFFIX,pe.cn2gias.uk,EMBY
+FINAL,Final
+
+[Remote Rule]
+https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=AI, tag=AI, enabled=true
+https://rule.kelee.one/Loon/TelegramNL.lsr, policy=🇳🇱Telegram, tag=🇳🇱Telegram, enabled=true
+https://rule.kelee.one/Loon/TelegramUS.lsr, policy=🇺🇸Telegram, tag=🇺🇸Telegram, enabled=true
+https://rule.kelee.one/Loon/TelegramSG.lsr, policy=🇸🇬Telegram, tag=🇸🇬Telegram, enabled=true
+https://rule.kelee.one/Loon/Facebook.lsr, policy=Meta, tag=Meta, enabled=true
+https://rule.kelee.one/Loon/Twitter.lsr, policy=Twitter, tag=Twitter, enabled=true
+https://rule.kelee.one/Loon/Wikimedia.lsr, policy=Wikimedia, tag=Wikimedia, enabled=true
+https://rule.kelee.one/Loon/Netflix.lsr, policy=🇹🇼Stream, tag=Netflix, enabled=true
+https://rule.kelee.one/Loon/Spotify.lsr, policy=🇹🇼Stream, tag=Spotify, enabled=true
+https://rule.kelee.one/Loon/HBO.lsr, policy=🇹🇼Stream, tag=HBO, enabled=true
+https://rule.kelee.one/Loon/HBOAsia.lsr, policy=🇹🇼Stream, tag=HBOAsia, enabled=true
+https://rule.kelee.one/Loon/HBOHK.lsr, policy=🇹🇼Stream, tag=HBOHK, enabled=true
+https://rule.kelee.one/Loon/HBOUSA.lsr, policy=🇹🇼Stream, tag=HBOUSA, enabled=true
+https://rule.kelee.one/Loon/Disney.lsr, policy=🇹🇼Stream, tag=Disney, enabled=true
+https://rule.kelee.one/Loon/YouTube.lsr, policy=🇹🇼Stream, tag=YouTube, enabled=true
+https://rule.kelee.one/Loon/Google.lsr, policy=🇹🇼Stream, tag=Google, enabled=true
+https://rule.kelee.one/Loon/Microsoft.lsr, policy=🇹🇼Stream, tag=Microsoft, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/AppleMusic/AppleMusic.list, policy=Apple Music, tag=Apple Music, enabled=true
+https://rule.kelee.one/Loon/Apple.lsr, policy=Apple, tag=Apple, enabled=true
+https://rule.kelee.one/Loon/WeChat.lsr, policy=WeChat, tag=Wechat, enabled=true
+https://rule.kelee.one/Loon/TikTok.lsr, policy=TikTok, tag=TikTok, enabled=true
+https://rule.kelee.one/Loon/Binance.lsr, policy=Binance, tag=Binance, enabled=true
+https://rule.kelee.one/Loon/Game.lsr, policy=Game, tag=Game, enabled=true
+https://rule.kelee.one/Loon/Twitch.lsr, policy=Final, tag=Twitch, enabled=true
+https://rule.kelee.one/Loon/Adobe.lsr, policy=Final, tag=Adobe, enabled=true
+https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
+https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REAGION, enabled=true
+
+[Rewrite]
+
+[Host]
+
+[Script]
+
+[Plugin]
+https://kelee.one/Tool/Loon/Lpx/XiaoHeiHe_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/HKDouYin_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, pin=true, enabled=false
+https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, policy=Tag Proxy, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/ValorantBible_remove_ads.lpx, enabled=true
+https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.plugin, enabled=true
+https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.plugin, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
+
+[MITM]
+ca-p12 = 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
+ca-passphrase = J4529WBT
+skip-server-cert-verify = false
+
