@@ -8,10 +8,10 @@ wifi-access-http-port = 7222
 wifi-access-socks5-port = 7221
 allow-wifi-access = false
 interface-mode = auto
-test-timeout = 60
+test-timeout = 10
 disconnect-on-policy-change = false
-dns-server = 223.5.5.5,119.29.29.29
-doq-server = quic://223.5.5.5:853,quic://223.6.6.6:853
+dns-server = 223.5.5.5
+doh-server = https://dns.alidns.com/dns-query
 proxy-test-url = http://1.1.1.1/generate_204
 internet-test-url = http://wifi.vivo.com.cn/generate_204
 resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
@@ -108,7 +108,7 @@ https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
-https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, pin=true, enabled=false
+https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, policy=Tag Proxy, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, pin=true, enabled=true
 https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, pin=true, enabled=true
