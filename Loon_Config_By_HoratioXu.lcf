@@ -10,8 +10,8 @@ allow-wifi-access = false
 interface-mode = auto
 test-timeout = 10
 disconnect-on-policy-change = false
-dns-server = 223.5.5.5
-doh-server = https://dns.alidns.com/dns-query
+dns-server = 223.5.5.5,119.29.29.29
+doh-server = https://wrecking7857.com:44443/dns-query/5fb6c95f-70e9-4666-b925-acf95e4c478b,https://carrousel6917.com:44443/dns-query/5fb6c95f-70e9-4666-b925-acf95e4c478b,https://simmering3378.com:443/dns-query/5fb6c95f-70e9-4666-b925-acf95e4c478b
 proxy-test-url = http://1.1.1.1/generate_204
 internet-test-url = http://wifi.vivo.com.cn/generate_204
 resource-parser = https://raw.githubusercontent.com/sub-store-org/Sub-Store/release/sub-store-parser.loon.min.js
@@ -33,26 +33,29 @@ Nexitally Proxy = select,Nexitally,img-url = https://raw.githubusercontent.com/l
 Tag Proxy = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TAG.png
 SNTP Proxy = select,SNTP,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(2).png
 CTC Proxy = select,CTC,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SCTC.png
-AI = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatGPT-green.png
-🇳🇱Telegram = select,Tag,SNTP,img-url = https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Netherlands.png
-🇺🇸Telegram = select,Tag,img-url = https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/FlagGif/united-states.gif
-🇸🇬Telegram = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+AI = select,Nexitally,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/chatGPT-green.png
+Telegram = select,Nexitally,img-url = https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Netherlands.png
 Meta = select,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/meta.png
 Twitter = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
 Wikimedia = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/wikipedia.png
-🇹🇼Stream = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(4).png
-Apple Music = select,DIRECT,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applemusic.png
+🇹🇼Stream = select,Nexitally,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/01Country/taiwan(4).png
+Apple Music = select,DIRECT,Nexitally,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applemusic.png
 Apple = select,DIRECT,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
 WeChat = select,DIRECT,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/wechat.png
 TikTok = select,Tag,img-url = https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/tiktok.png
 Binance = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/bian.png
-Game = select,Tag,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/game(3).png
+Game = select,Nexitally,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/05icon/game(3).png
 EMBY = select,SNTP,img-url = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/04ProxySoft/emby.png
-Final = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+Final = select,Nexitally,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 
 [Proxy Chain]
 
 [Rule]
+DOMAIN-SUFFIX,durable0762.com,DIRECT
+DOMAIN-SUFFIX,delirium9599.com,DIRECT
+DOMAIN-SUFFIX,wrecking7857.com,DIRECT
+DOMAIN-SUFFIX,carrousel6917.com,DIRECT
+DOMAIN-SUFFIX,simmering3378.com,DIRECT
 DOMAIN-SUFFIX,rama991.siamparagon.org,DIRECT
 DOMAIN-SUFFIX,ping0.cc,Meta
 DOMAIN-SUFFIX,tagss.pro,SNTP Proxy
@@ -67,9 +70,7 @@ FINAL,Final
 
 [Remote Rule]
 https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=AI, tag=AI, enabled=true
-https://rule.kelee.one/Loon/TelegramNL.lsr, policy=🇳🇱Telegram, tag=🇳🇱Telegram, enabled=true
-https://rule.kelee.one/Loon/TelegramUS.lsr, policy=🇺🇸Telegram, tag=🇺🇸Telegram, enabled=true
-https://rule.kelee.one/Loon/TelegramSG.lsr, policy=🇸🇬Telegram, tag=🇸🇬Telegram, enabled=true
+https://rule.kelee.one/Loon/Telegram.lsr, policy=Telegram, tag=Telegram, enabled=true
 https://rule.kelee.one/Loon/Facebook.lsr, policy=Meta, tag=Meta, enabled=true
 https://rule.kelee.one/Loon/Twitter.lsr, policy=Twitter, tag=Twitter, enabled=true
 https://rule.kelee.one/Loon/Wikimedia.lsr, policy=Wikimedia, tag=Wikimedia, enabled=true
