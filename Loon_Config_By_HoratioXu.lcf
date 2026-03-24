@@ -23,7 +23,7 @@ bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,1
 [Remote Proxy]
 Nexitally = https://cdn.zenithgrid.co/?L2Rvd25sb2FkQ29uZmlnL0xvb24uYXNweD9xeD1jMjAyMiZlcT1pb3MmdXJrPTNlZDUwNzE0LWQwOGMtNGZlNC05MzA3LWNkZTZkYmY2MmIyOCZtbT0yMjYyNjQma3RtbT1ySlhjbG5lVzI5WElSbm4wZHo0Y3BnJTNkJTNkJmViNmM2ZGVmMDU1NzRjMDhhOTcwNQ==,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=false,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/Nexitally(1).png
 Tag = https://rama991.siamparagon.org/api/v1/trails/bolster?token=59946381b11e385e8e1bd8039a1e7ca5,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=false,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TAG.png
-SNTP = https://sub1.sntp.me/baseStr?token=cab47310940b758e081c7995c8bc9495&sign=134f7ec2c814bfd33aa2cb28f354077a&ts=1773499566&nonce=2356dcf46d7c7909955949a0d1a6878d&v=v2&timestamp=120764,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=true,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(2).png
+SNTP = https://sub1.sntp.me/baseStr?token=d0ab8424c95e74cc4e97985aa1fbde1e&sign=fd93af9b30dc9870de9279b3363fbda4&ts=1774108204&nonce=e751d41d8300ac158e39bc9c5d8c81d9&v=v2&timestamp=120764,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=true,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/06jichang/shouhou(2).png
 CTC = https://47.115.49.124:9999/api/v1/client/subscribe?token=f5b0ffcdd55c83ccd87159568b3e6c14,udp=true,block-quic=true,fast-open=true,vmess-aead=false,skip-cert-verify=false,enabled=true,flexible-sni=false,img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SCTC.png
 
 [Remote Filter]
@@ -51,6 +51,8 @@ Final = select,Tag,img-url = https://raw.githubusercontent.com/Koolson/Qure/mast
 [Proxy Chain]
 
 [Rule]
+DOMAIN-SUFFIX,ncdn1.sntp.uk,SNTP Proxy
+DOMAIN-SUFFIX,sub1.sntp.me,SNTP Proxy
 DOMAIN-SUFFIX,rama991.siamparagon.org,DIRECT
 DOMAIN-SUFFIX,tagss.pro,SNTP Proxy
 DOMAIN,imagine.meta.com,Meta
@@ -97,7 +99,6 @@ https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REAGI
 
 [Plugin]
 https://kelee.one/Tool/Loon/Lpx/XiaoHeiHe_remove_ads.lpx, enabled=true
-https://kelee.one/Tool/Loon/Lpx/HKDouYin_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Tieba_remove_ads.lpx, enabled=true
